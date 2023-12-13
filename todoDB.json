@@ -1,0 +1,12 @@
+{
+    "categories": [],
+    "tasks": [
+        {
+            "id": "89b8deef-ff0f-4ad0-b240-ccb4b1b350f5",
+            "title": "Learning Client-server architecture",
+            "description": "Setting up the back-end",
+            "status": "OPEN",
+            "categoryId": "dd88a80b-f538-4536-84ce-2667cf2fdc90"
+        }
+    ]
+}
