@@ -4,7 +4,7 @@ import {
   NotFoundException,
 } from '@nestjs/common';
 import { v4 as uuidv4 } from 'uuid';
-import { db } from 'src/helpers/db';
+import { db } from '../helpers/db';
 import { CreateCategoryDto } from './dtos/create-category.dto';
 
 @Injectable()
@@ -40,7 +40,6 @@ export class CategoryRepository {
       '/tasks',
       (task) => task.categoryId === id,
     );
-    console.log(taskCategory);
     if (taskCategory)
       throw new ConflictException(
         'The category you are trying to delete has tasks assigned to it',

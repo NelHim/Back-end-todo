@@ -33,7 +33,7 @@ export class CategoryController {
     description:
       'The category you are trying to delete has tasks assigned to it',
   })
-  async deleteTask(@Param('id') id: string) {
+  async deleteCategory(@Param('id') id: string) {
     return this.categoryService.deleteCategory(id);
   }
 }
